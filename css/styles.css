@@ -77,3 +77,16 @@ img {
     display:block;
     margin:0 auto
 }
+
+.flex {
+    display: flex;
+}
+
+.column {
+    padding: 25px;
+}
+
+.invert{
+   -webkit-filter: invert(1);
+   filter: invert(1);
+}
