@@ -108,8 +108,6 @@ h6 {
     animation: shimmer 5s;
 }
 
-.nothing {}
-
 @keyframes shimmer {
     0% {visibility: visible; opacity: 0;}
     50% {opacity: 1;}
