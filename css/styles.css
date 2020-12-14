@@ -7,7 +7,7 @@ html {
     filter:invert(1);
 }
 
-h2,h3,h4,h5,h6 {
+h2,h3,h4,h6 {
     margin-top:3rem
 }
 
@@ -89,4 +89,27 @@ img {
 .invert{
    -webkit-filter: invert(1);
    filter: invert(1);
+}
+
+.star {
+    position: absolute;
+    visibility: hidden;
+}
+
+.star h5 {
+    margin-top: -32px;
+}
+
+h6 {
+    font-size: x-large;
+}
+
+.shimmer {
+    animation: shimmer 5s;
+}
+
+@keyframes shimmer {
+    0% {visibility: visible; opacity: 0;}
+    50% {opacity: 1;}
+    100% {visibility: hidden; opacity: 0;}
 }
