@@ -14,7 +14,7 @@ async function shootingStar(id) {
     document.getElementById(id).style.visibility = "visible"
 
     while (parseInt(document.getElementById(id).style.top.valueOf()) < maxTop) {
-        document.getElementById(id).style.top = (parseInt(document.getElementById(id).style.top.valueOf()) + 5) + "px"
+        document.getElementById(id).style.top = (parseInt(document.getElementById(id).style.top.valueOf()) + 8) + "px"
         document.getElementById(id).style.left = (parseInt(document.getElementById(id).style.left.valueOf()) + 5) + "px"
         await sleep(10)
     }
@@ -26,7 +26,7 @@ async function stars() {
     await sleep(1000)
 
     while (true) {
-        if (Math.random() < 0.1) {
+        if (Math.random() < 0.15) {
             var star = document.createElement("h6")
             star.innerText = "★"
             star.style.top = Math.floor( Math.random() * maxTop ) + "px"
